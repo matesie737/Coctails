@@ -1,23 +1,4 @@
-.item {
-  color: red;
-  opacity: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  color: #FFE3D8;
-  border-radius: 20px;
-  background-color: #03506F;
-  -webkit-animation-name: EnterAnimation;
-          animation-name: EnterAnimation;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.item .container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,9 +9,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #03506f;
+  opacity: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  color: #ffe3d8;
+  border-radius: 20px;
+  -webkit-animation-name: EnterAnimation;
+          animation-name: EnterAnimation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.item .container .left_side {
+.container .left_side {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,13 +39,13 @@
           justify-content: center;
 }
 
-.item .container .left_side .image {
+.container .left_side .image {
   background-color: yellow;
   height: 50px;
   width: 50px;
 }
 
-.item .container .right_side {
+.container .right_side {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,14 +62,14 @@
           align-items: center;
 }
 
-.item .container .right_side .name {
+.container .right_side .name {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 40px;
 }
 
-.item .container .right_side .ingredients {
+.container .right_side .ingredients {
   width: 90%;
   margin-left: 10%;
 }
@@ -90,7 +86,7 @@
   }
 }
 
-.item:hover {
+.container:hover {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
