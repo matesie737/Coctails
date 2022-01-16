@@ -1,0 +1,170 @@
+body {
+  background-color: #28527A;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-animation: enteranimation 5s;
+          animation: enteranimation 5s;
+}
+
+.mainContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.mainContainer .container .leftColumn {
+  text-align: right;
+  font-size: 300px;
+  float: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.mainContainer .container .leftColumn .letter {
+  opacity: 0.5;
+  white-space: nowrap;
+  background: linear-gradient(92deg, #95d7e3, #eb76ff);
+  background-size: 600vw 600vw;
+  background-clip: text;
+  -webkit-animation: textAnimate 5s linear infinite alternate;
+          animation: textAnimate 5s linear infinite alternate;
+}
+
+.mainContainer .container .leftColumn .letter:hover {
+  opacity: 1.0;
+  text-shadow: 0 0 95px rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes textAnimate {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    background-position-x: 0%;
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    background-position-x: 0%;
+  }
+}
+
+@keyframes textAnimate {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+    background-position-x: 0%;
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+    background-position-x: 0%;
+  }
+}
+
+.mainContainer .container .rightColumn .errorMessage {
+  font-size: 70px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .container .rightColumn .errorMessage .e404 {
+  font-size: 150px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mainContainer .container .rightColumn .errorMessage .e {
+  padding-left: 20px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.mainContainer .container .rightColumn .errorMessage:hover {
+  text-shadow: 0 0 95px rgba(255, 255, 255, 0.5);
+}
+
+.mainContainer .link {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+}
+
+.mainContainer .link a:visited {
+  color: white;
+}
+
+.mainContainer .link a:active {
+  color: white;
+}
+
+.mainContainer .link a:hover {
+  font-weight: 500;
+}
+
+@-webkit-keyframes enteranimation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes enteranimation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=NotFound.module.css.map */

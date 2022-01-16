@@ -1,0 +1,56 @@
+.item{
+    color: red;
+    opacity: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    color: #FFE3D8;
+    border-radius: 20px;
+    background-color: #03506F;
+    animation-name: EnterAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .left_side{  
+            width: 50%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .image{
+                background-color: yellow;
+                height: 50px;
+                width: 50px;
+            }
+        }
+        .right_side{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name{
+                justify-content: center;
+                font-size: 40px;
+            }
+
+            .ingredients{
+                width: 90%;
+                margin-left: 10%;
+            }
+        }
+    }
+
+    @keyframes EnterAnimation {
+        100% {opacity: 0.9;}
+      }
+
+}
+.item:hover{
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    opacity: 1;
+} 
